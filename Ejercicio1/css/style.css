@@ -1,0 +1,65 @@
+body { font-family: 'Libre Franklin', sans-serif; font-weight: 400; font-size: 16px; color: #040404; }
+h1 { font-size: 45px; text-transform: uppercase; font-weight: 600; margin-bottom: 20px; }
+a { text-decoration: none; color: #040404; transition: all 0.3s ease; }
+a:hover { color: #747272; }
+input { border: 0; border-bottom: 2px solid #040404; height: 30px; outline: none; }
+
+.header-container { display: flex; justify-content: space-between; flex-wrap: nowrap; padding: 30px 20px; align-items: stretch; height: 80px; }
+.header-item { flex-grow: 1; }
+
+.menu .current { font-weight: 600; }
+.submenu:not(.current) { font-weight: 400; }
+.menu .featured { color: #af1717; }
+
+.main-menu { display: flex; justify-content: left; position: relative; }
+.main-menu-item { padding: 0 10px; }
+.main-menu-item a { font-size: 14px; text-transform: uppercase; }
+.main-menu-item:first-child { border-right: 1px solid #040404; }
+
+.submenu { position: absolute; top: 25px; left: 10px; }
+.submenu li { margin: 10px 0; }
+.submenu a { text-transform: capitalize; font-size: 18px; line-height: 18px; }
+
+.logo-container { display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
+.breadcrums ul { display: flex; justify-content: center; gap: 0 10px; }
+.breadcrums ul .current a { color: #040404; font-weight: 400; }
+.breadcrums ul li a { color: #c6c2c2; font-weight: 600; }
+.breadcrums ul li:not(:last-child):after { content: ""; display: inline-block; vertical-align: middle; border: solid black; border-width: 0 1px 1px 0; padding: 3px; transform: rotate(-45deg); margin-left: 5px; }
+
+.col6 { display: flex; justify-content: space-evenly; flex-wrap: nowrap; gap: 10px; width: 100%; max-width: 1300px; margin: 0 auto; }
+
+.right-content { display: flex; flex-direction: column; justify-content: space-between; }
+.right-content div { display: flex; justify-content: right; gap: 0 20px; align-items: flex-end; }
+.search-container input { width: 100%; max-width: 220px; }
+.search-container span { display: inline-block; width: 25px; height: 25px; background-position: center; background-size: 100%; background-repeat: no-repeat; }
+.search-container .login { background-image: url(../img/login-icon.png); }
+.search-container .cart { background-image: url(../img/cart-icon.png); }
+.customize-content { font-size: 12px; text-transform: uppercase; }
+.customize-content .view { gap: 0 5px; }
+
+.main-container { width: 100%; max-width: 1140px; display: flex; justify-content: flex-start; gap: 20px; flex-wrap: wrap; margin: 0 auto; }
+.main-container.center { flex-direction: column; align-content: center; justify-content: center; }
+.main-container .product { flex-basis: 23%; text-align: center; font-size: 12px; line-height: 12px; }
+.main-container .product img { width: 100%; margin-bottom: 10px; }
+.main-container .product .product-name { max-width: 80%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; margin: 0 auto; }
+.main-container .product .price { font-weight: 600; margin-top: 5px; }
+
+.promo { border-top: 1px solid #e8e4e4; margin-top: 70px; }
+.promo .main-container { padding: 50px 0; }
+.promo * { text-align: center; }
+.promo p:first-child { font-size: 40px; font-weight: 600; line-height: 40px; text-transform: uppercase;  }
+.promo p:nth-child(2) { font-size: 30px; line-height: 30px; }
+.promo form { width: 60%; margin-top: 30px; }
+.promo label { display: block; line-height: 14px; font-size: 14px; }
+.promo input { width: 100%; }
+
+.contact { text-align: center; gap: 15px; padding: 40px 0; }
+.contact p:first-child { font-weight: bold; }
+.contact div a { padding: 0 5px; }
+.contact div a:not(:last-child):after { content: "|"; display: inline-block; margin-left: 5px; color: #040404; }
+.contact div a:first-child { color: #71a694; }
+
+footer { border-top: 1px solid #e8e4e4; font-size: 12px; line-height: 12px; }
+.footer-container { border: 1px solid #ccc; padding: 50px 0; }
+.footer-title { font-weight: 600; margin-bottom: 30px; }
+.footer-container ul li { margin-bottom: 15px; }
